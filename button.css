@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+  .container {
+  background: wheat;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.content {text-align: center;}
+
+.download-btn{
+margin: 10px 0;
+}
+.download-btn.dBtn>a{
+cursor: not-allowed;
+pointer-events: none;
+}
+.download-btn.dBtn{
+animation: dBtn 10s ease-out forwards;
+
+}
+@keyframes dBtn{
+0%{
+  opacity: 1;
+}
+ 10%{
+  opacity: 0.9;
+}
+ 20%{
+  opacity: 0.8;
+}
+ 30%{
+  opacity: 0.7;
+}
+ 40%{
+  opacity: 0.6;
+}
+ 50%{
+  opacity: 0.5;
+}
+ 60%{
+  opacity: 0.4;
+}
+ 70%{
+  opacity: 0.3;
+}
+ 80%{
+  opacity: 0.2;
+}
+ 90%{
+  opacity: 0.1;
+}
+ 100%{
+  opacity: 0;
+  display: none;
+  visibility: hidden;
+}
+}
+.download-btn a {
+  background: burlywood;
+  padding: 9px 60px;
+  border-radius: 4px;
+  font-size: 30px;
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.count p {
+  font-size: 18px;
+  font-weight: 800;
+  font-family: monospace;
+}
+
+.count p span {
+  font-size: 23px;
+  color: burlywood;
+}
+
+.wait p {
+  font-size: 17px;
+  font-weight: 600;
+  font-family: monospace;
+}
+
+.download-link p {
+  font-size: 16px;
+  font-family: system-ui;
+  color: #b1803e;
+}
+
+.download-link{
+margin: 10px 0;
+}
+.download-link p a {
+  text-decoration: none;
+  margin: 0 5px;
+  font-weight: 700;
+  font-family: monospace;
+  color: #a77d46;
+}
